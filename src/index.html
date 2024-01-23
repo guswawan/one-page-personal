@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Agus Setyawan - Static Page</title>
+  </head>
+  <body>
+    <div class="px-4 lg:px-20">
+      <header
+        class="flex justify-center lg:justify-between items-center pt-20 pb-14"
+      >
+        <div class="text-white text-3xl justify-center md:justify-center">
+          Ag<span class="text-[#ffffff40] text-xl">. Front-end</span>
+        </div>
+        <nav class="flex gap-9">
+          <div class="navigation hidden lg:block">Present</div>
+          <div class="navigation hidden lg:block">Work</div>
+          <div class="navigation hidden lg:block">Learn</div>
+        </nav>
+      </header>
+      <main
+        id="animatedCard"
+        class="grid grid-cols-1 lg:grid-cols-6 gap-8 m-auto"
+      >
+        <section class="card-intro">
+          <div class="flex flex-col justify-between h-full z-10">
+            <div class="lg:flex justify-between">
+              <div class="flex gap-6 py-2">
+                <!-- <div
+                  class="bg-yellow-500 w-12 h-12 rounded-full flex justify-center items-center"
+                >
+                  <h1 class="scale-150">🍉</h1>
+                </div> -->
+                <div
+                  class="bg-yellow-500 w-12 h-12 rounded-full flex justify-center items-center relative group transition-transform"
+                >
+                  <h1
+                    class="scale-150 group-hover:scale-10 transition-transform"
+                  >
+                    🍉
+                  </h1>
+                  <img
+                    src="images/avatar-i.webp"
+                    alt="pp"
+                    class="absolute inset-0 object-cover w-full h-full rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:duration-1000"
+                  />
+                </div>
+
+                <div>
+                  <div class="text-white">Hi, I'm Agsetyawan</div>
+                  <div class="text-[#ffffff40] text-sm">
+                    Front-end developer
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-4 items-center py-2 z-99">
+                <div
+                  class="flex bg-gray-800 h-10 w-10 justify-center items-center rounded-md"
+                >
+                  <a href="http://twitter.com/agsn_" target="_blank">
+                    <img
+                      width="24px"
+                      src="icons/icon-twitter.svg"
+                      alt="Twitter(x)"
+                      class="text-white"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="flex bg-gray-800 h-10 w-10 justify-center items-center rounded-md"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/agus-setyawan-/"
+                    target="_blank"
+                  >
+                    <img
+                      width="24px"
+                      src="icons/icon-linkedin.svg"
+                      alt="LinkedIn"
+                      class="text-white"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="flex bg-gray-800 h-10 w-10 justify-center items-center rounded-md hover:cursor-pointer"
+                >
+                  <a href="https://github.com/guswawan" target="_blank">
+                    <img
+                      width="24px"
+                      src="icons/icon-github.svg"
+                      alt="GitHub"
+                      class="text-white"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="text-4xl md:text-6xl lg:text-6xl text-white font-semibold lg:py-4 leading-tight"
+            >
+              Passionate to pursue the technology.
+            </div>
+            <div class="text-xl w-[75%] leading-9 text-gray-400">
+              I enjoy learning new things and try to overcome new challenges
+              while analyzing how I improved through them.
+            </div>
+          </div>
+          <img
+            class="bg-card-yellow"
+            src="images/card-background.png"
+            alt="card-background"
+          />
+        </section>
+
+        <section class="card-avatar">
+          <img
+            src="images/avatar-alpha.png"
+            alt="avatar"
+            class="absolute bottom-0 hover:scale-110 hover:duration-200 transition-transform drop-shadow-xl z-50"
+            width="90%"
+          />
+          <div
+            class="w-[150%] h-[124%] rounded-full absolute -bottom-[60%] flex items-center justify-center animate-ping transition-opacity"
+          >
+            <div
+              class="w-[100%] h-[110%] rounded-full bg-white bg-opacity-25 absolute"
+            ></div>
+
+            <div
+              class="w-[90%] h-[95%] rounded-full bg-white bg-opacity-45 absolute flex items-center justify-center"
+            >
+              <div
+                class="w-[84%] h-[84%] rounded-full bg-white bg-opacity-45 absolute flex items-center justify-center"
+              >
+                <div
+                  class="w-[88%] h-[74%] rounded-full bg-white bg-opacity-90"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="card-work">
+          <div
+            class="text-4xl md:text-6xl lg:text-6xl text-white font-semibold py-4 md:w-[60%] lg:w-[76%] z-8"
+          >
+            <p class="leading-tight">
+              <span class="opacity-50">Currently I'm working at</span>
+              Padi
+            </p>
+          </div>
+          <div
+            class="text-xl w-80% md:w-[50%] lg:w-[75%] leading-9 text-[#D8B0FF] py-4 z-8"
+          >
+            Building Business to Business Commerce Marketplace
+          </div>
+          <div class="flex justify-end absolute bottom-1 z-99">
+            <img src="images/human.png" alt="human" width="60%" />
+          </div>
+        </section>
+        <section class="card-showreel">
+          <div class="p-14">
+            <div class="flex relative items-center gap-3 px-4">
+              <p class="text-white text-3xl pb-2">
+                reflects<span class="text-gray-400">.app</span>
+              </p>
+              <a href="http://google.com" target="_blank">
+                <img
+                  src="icons/anchor.svg"
+                  alt="anchor"
+                  class="bg-[#ffffff1a] hover:opacity-50 rounded-full lg:h-8 lg:w-8 p-2 lg:p-3 color-[#d5b5ff]"
+                />
+              </a>
+            </div>
+            <p class="text-gray-400 text-sm px-4">
+              never miss a note, idea or connection
+            </p>
+          </div>
+          <div class="flex justify-center items-start">
+            <img
+              class="rounded-3xl object-contain"
+              src="images/showreel-1.png"
+              alt="showreel"
+              width="80%"
+            />
+          </div>
+        </section>
+        <section class="card-learning">
+          <div class="flex justify-between h-full relative">
+            <div class="flex flex-col gap-4">
+              <div class="text-white text-sm">
+                I constanly to improve my self
+              </div>
+              <div
+                class="text-3xl font-normal text-white md:w-[60%] lg:w-[50%] leading-normal"
+              >
+                Currently, I am learning Fullstack Javascript
+              </div>
+              <div
+                class="text-xl md:w-[65%] lg:w-[50%] leading-9 text-gray-600 py-2"
+              >
+                I am also learning TypeScript. Other than that, I also
+                constantly practice web design.
+              </div>
+            </div>
+            <div
+              class="flex gap-1 lg:gap-4 absolute w-[70%] -right-8 top-20 lg:w-full justify-end rotate-12 md:top-2 lg:-top-10"
+            >
+              <div class="w-16">
+                <img
+                  class="animate-pulse transition-transform object-cover object-top"
+                  src="logos/js-skill.png"
+                  alt=""
+                />
+              </div>
+              <div class="w-16">
+                <img
+                  class="animate-pulse transition-transform object-cover object-center mt-12"
+                  src="logos/ts-skill.png"
+                  alt=""
+                />
+              </div>
+              <div class="w-16">
+                <img
+                  class="animate-pulse transition-transform object-cover object-center mt-24"
+                  src="logos/vue-skill.png"
+                  alt=""
+                />
+              </div>
+              <div class="w-16">
+                <img
+                  class="animate-pulse transition-transform object-cover object-center mt-12"
+                  src="logos/css-skill.png"
+                  alt=""
+                />
+              </div>
+              <div class="w-16">
+                <img
+                  class="animate-pulse transition-transform object-cover object-center"
+                  src="logos/z-skill.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="confetti-area" class="card-mood">
+          <div class="flex items-center justify-center m-auto">
+            <p
+              class="lg:text-5xl md:text-9xl text-8xl font-extrabold text-white pl-16 lg:pl-9 pt-8 tracking-wider"
+            >
+              how was your day?
+            </p>
+          </div>
+          <div class="flex w-10 gap-20 ml-2 mt-7">
+            <img
+              src="images/memoji.png"
+              alt="memoji"
+              class="absolute bottom-0 hover:scale-110 hover:duration-200 transition-transform drop-shadow-xl z-50 ml-2 md:ml-5 lg:ml-1"
+              width="90%"
+            />
+          </div>
+        </section>
+      </main>
+      <footer class="text-white text-sm py-4 mt-4 flex justify-center">
+        Made by Me ©2024
+      </footer>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
