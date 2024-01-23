@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes ping {
+  100%,
+  100% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+.animate-ping {
+  animation: ping 5s cubic-bezier(0, 0, 1, 1) infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-[#09050F] font-display;
+  }
+}
+
+@layer components {
+  .navigation {
+    @apply text-xl text-[#ffffff40] transition duration-300 transform hover:scale-105 hover:text-gray-500 cursor-pointer;
+  }
+
+  .card-intro {
+    @apply bg-gradient-to-tl from-gray-700 via-gray-900 to-gray-950 lg:h-[500px] col-span-6 lg:col-span-4 rounded-tl-3xl rounded-tr-[56px] rounded-br-lg rounded-bl-[56px] relative px-14 py-12 border border-gray-800 overflow-hidden;
+  }
+
+  .bg-card-yellow {
+    @apply ml-20 -mt-64 w-[720px] h-[420px];
+  }
+
+  .card-avatar {
+    @apply bg-[#ffd951] h-[460px] md:h-[700px] lg:h-[500px] col-span-6 lg:col-span-2 rounded-tl-[56px] rounded-tr-3xl rounded-br-[56px] rounded-bl-lg relative flex items-center justify-center overflow-hidden;
+  }
+
+  .card-work {
+    @apply bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-gray-200 via-violet-600 to-violet-950 h-[480px] md:h-[600px] lg:h-[554px] col-span-6 lg:col-span-3 rounded-tl-[56px] rounded-tr-lg rounded-br-lg rounded-bl-3xl px-14 py-14 relative;
+  }
+
+  .card-showreel {
+    @apply bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-violet-700 via-gray-900 to-gray-950 h-[360px] md:h-[500px] lg:h-[554px] col-span-6 lg:col-span-3 rounded-tl-lg rounded-bl-lg rounded-tr-[56px] rounded-br-3xl border border-gray-800 overflow-hidden;
+  }
+
+  .card-learning {
+    @apply bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-900 via-gray-900 to-gray-950 h-[480px] md:h-[400px] lg:h-[400px] col-span-6 lg:col-span-5 rounded-tl-3xl rounded-tr-[56px] rounded-br-lg rounded-bl-[56px] relative px-14 py-12 border border-gray-800;
+  }
+
+  .card-mood {
+    @apply bg-gradient-to-br from-orange-700 to-yellow-600 h-[460px] backdrop-blur-sm h-[600px] md:h-[800px] lg:h-[400px] col-span-6 lg:col-span-1 rounded-tl-[56px] rounded-tr-3xl rounded-br-[56px] rounded-bl-lg overflow-hidden;
+  }
+}
