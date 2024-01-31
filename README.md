@@ -1,2 +1,2 @@
-# one-page-personal
+# one-page-personal[devscale]
 create with vite
